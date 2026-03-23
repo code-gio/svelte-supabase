@@ -40,7 +40,7 @@ export const actions: Actions = {
 			return fail(400, { message: error.message ?? "Failed to create account" });
 		}
 
-		redirect(303, "/");
+		redirect(303, `/verify-email?email=${encodeURIComponent(parsed.data.email)}`);
 	},
 
 	github: async (event) => {
