@@ -7,7 +7,7 @@ export const load: PageServerLoad = async () => {
 };
 
 export const actions: Actions = {
-	default: async (event) => {
+	signin: async (event) => {
 		const formData = await event.request.formData();
 		const email = formData.get("email");
 		const password = formData.get("password");

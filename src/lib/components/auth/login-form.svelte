@@ -26,7 +26,7 @@
 <form
 	class={cn("flex flex-col gap-6", className)}
 	method="POST"
-	action="?/default"
+	action="?/signin"
 	bind:this={ref}
 	{...restProps}
 >
