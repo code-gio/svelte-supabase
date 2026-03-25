@@ -49,7 +49,7 @@ const supabase: Handle = async ({ event, resolve }) => {
   })
 }
 
-const AUTH_ROUTES = ['/sign-in', '/sign-up', '/forgot-password']
+const AUTH_ROUTES = ['/sign-in', '/sign-up', '/forgot-password', '/verify-email', '/reset-password'];
 
 const authGuard: Handle = async ({ event, resolve }) => {
   const { session } = await event.locals.safeGetSession()
